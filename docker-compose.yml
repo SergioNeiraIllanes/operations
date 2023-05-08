@@ -6,8 +6,8 @@ services:
     build:
       dockerfile: ./Dockerfile
     ports:
-      - 8080:8080
+      - 80:80
     volumes:
-      - /Users/sergio2/Desktop/django/retail:/app
-    # command: pip install -r requirements.txt && python
+      - /Users/sergio2/Desktop/django/operations:/app
+    command: bash -c "pip install -r requirements.txt && cd operation && python manage.py runserver 0:80"
     tty: true
