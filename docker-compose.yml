@@ -8,6 +8,6 @@ services:
     ports:
       - 81:80
     volumes:
-      - /Users/sergio2/Desktop/django/operations:/app
+      - .:/app
     command: bash -c "pip install -r requirements.txt && cd operation && python manage.py runserver 0:80"
     tty: true
