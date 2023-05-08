@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  ops:
+    container_name: ops
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - /Users/sergio2/Desktop/django/retail:/app
+    # command: pip install -r requirements.txt && python
+    tty: true

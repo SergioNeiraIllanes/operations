@@ -1,2 +1,2 @@
-# operations
-Pablo and sergio project
+# retail
+scraping retail portals
